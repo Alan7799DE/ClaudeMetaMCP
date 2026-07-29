@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "claude-meta-mcp": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "cwd": "/ruta/a/ClaudeMetaMCP"
+    }
+  }
+}
