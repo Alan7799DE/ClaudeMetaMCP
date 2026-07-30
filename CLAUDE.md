@@ -2,6 +2,27 @@
 
 Contexto para Claude Code al trabajar en este proyecto.
 
+## ⛔ REGLA INQUEBRANTABLE — Aprobación explícita del usuario
+
+**NADA se publica, se programa, ni se activa/gasta sin aprobación explícita del usuario
+en el momento.** No hay excepciones, ni "publicaciones de prueba", ni "para verificar que
+funciona", ni aprobación general anticipada: la aprobación es **por acción y por vez**.
+
+Requieren confirmar con el usuario ANTES de ejecutar — mostrándole exactamente qué se va a
+publicar/activar (texto, imagen/URL, cuenta, fecha, presupuesto):
+
+- `publicar_instagram` — publica en el feed
+- `publicar_carrusel_instagram` — publica un carrusel
+- `publicar_facebook` — publica **o programa** en la Página
+- `responder_comentario_instagram` — publica una respuesta visible
+- `activar_campania` — enciende una campaña (empieza a gastar)
+- `actualizar_campania` con `status: ACTIVE` — mismo efecto: enciende una campaña
+
+Programar **es** publicar a futuro: cae bajo la misma regla. Que una acción sea reversible
+no exime de pedir aprobación. Preparar borradores, crear campañas/ads en PAUSED, leer
+métricas o listar cosas está permitido sin aprobación previa — lo que no se puede es
+**disparar la publicación o el gasto** sin el OK explícito del usuario.
+
 ## Qué es
 
 Servidor **MCP local en TypeScript** que expone la Graph API de Meta (v26.0) como
